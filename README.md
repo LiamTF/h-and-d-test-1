@@ -41,8 +41,10 @@ python main.py --parent_id "21" --api_access_token "your_api_access_token_here" 
 - Individually run "black ." for auto formatting, "ruff check ." for linting, and "mypy ." for type checking.
 
 ## **Discussion & Notes**
+- A standalone script felt appropriate for this task, as a hosted API would require a separate authentication step to approve actions like these. Also, due to the nature of the task, it is unlikely the script would be frequently repeated. If the user's technical experience/inexperience was stated, an additional local or hosted frontend/form for the script might be more appropriate.
 - A good amount of test time was used to read the Hubspot Associations API documentation.
 - Functionality is currently triggered by the script once on each run for a single company group (the location ID submitted) - this could easily be automated to run on all unique "Client Company Location ID" values found, or on a submitted client-company list, if required.
+- Also missed the specific Hubspot-meaning of "associations" in the brief, as the data is already "associated" through the unique location ID of the parent which matches each child's "Client Parent Company ID" ID.
 - Current ruff line-length setting is at 150 chars (just personal preference). All other settings for ruff, mypy, and black and left at default.
 - Automated Github workflow with pre-commit checks not completed due to time limit.
 - Looking forward to further discussing decision reasoning for this little task!
