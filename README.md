@@ -25,7 +25,7 @@ Confirm you are in the virtual python environment (if using), and run "pip insta
 
 ### 4. API Access Token
 Your Hubspot API access token must be included by either:
-- Including in in the command-line argument "--api_access_token", or by creating a .env file in the project root (preferred) and adding it as the value for the named environment variable "HUBSPOT_API_ACCESS_TOKEN=".
+- Including it in the command-line argument "--api_access_token", or by creating a .env file in the project root (preferred) and adding it as the value for the named environment variable "HUBSPOT_API_ACCESS_TOKEN=".
 Be careful not change or remove ".env" from the .gitignore, especially if using the environment variable API access token loading method.
 
 ### 5. Run the script
